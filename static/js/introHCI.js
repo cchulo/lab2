@@ -9,13 +9,6 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	var button = $('<input/>').attr({
-		type: "button",
-		id: "testjs",
-		class: "btn btn-primary",
-		value: "Test Javascript"
-	});
-	$(".jumbotron").append(button);
 	$("#testjs").click(function(e) {
 		$('.jumbotron h1').text("Javascript is connected");
 	});
